@@ -192,7 +192,7 @@ public class ActionInfo2 implements ActionInfo {
         if(httpMethod == null){
             return true;
         }
-        return StringUtils.equals(httpMethod.toString(),bag.getMethod());
+        return StringUtils.equals(httpMethod,bag.getMethod());
     }
 
     @Override
