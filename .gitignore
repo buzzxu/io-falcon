@@ -1,0 +1,15 @@
+# Created by .gitignore support plugin (hsz.mobi)
+### default template
+*.class
+*.iml
+.idea
+# Eclipse
+.settings/
+.classpath
+.project
+target/
+# Package Files #
+*.jar
+*.war
+*.ear
+

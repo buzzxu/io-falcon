@@ -1,0 +1,35 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+    <context-param>
+        <param-name>sky.stage</param-name>
+        <param-value>devel</param-value>
+    </context-param>
+    <context-param>
+        <param-name>controller.package</param-name>
+        <param-value>io.falcon.demo.controllers</param-value>
+    </context-param>
+    <context-param>
+        <param-name>template.name</param-name>
+        <param-value>freemarker</param-value>
+    </context-param>
+    <context-param>
+        <param-name>template.folder</param-name>
+        <param-value></param-value>
+    </context-param>
+    <filter>
+        <filter-name>fly</filter-name>
+        <filter-class>io.falcon.servlet.DispatchFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>fly</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>
